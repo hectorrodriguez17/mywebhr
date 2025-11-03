@@ -1,0 +1,181 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  background-image: url("img/banner.jpeg");
+  background-size: cover;       
+  background-position: center;  
+  text-align: center;
+  padding: 80px 0;              
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: #00bcd4;
+  position: relative;
+  z-index: 1;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; 
+}
+
+
+header .banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+}
+
+main {
+  display: block; 
+  flex: 1;
+  padding: 40px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+section {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+
+.seccion-con-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.seccion-con-img img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seccion-con-img img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.5);
+}
+
+.texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+h2 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+p, li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+
+aside {
+  background: #222;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+}
+
+aside h3 {
+  color: #00bcd4;
+}
+
+aside a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: #00bcd4;
+}
+
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
+
+#profesores {
+  margin-top: 40px;
+}
+
+#profesores a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#profesores a:hover {
+  color: #66ffff;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .seccion-con-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seccion-con-img img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+  }
+
+  header {
+    font-size: 1.5em;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#sobre-mi img {
+  max-width: 250px;
+  border-radius: 50%;
+}
