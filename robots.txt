@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hectorrodriguez17.github.io/mywebhr/sitemap.xml
